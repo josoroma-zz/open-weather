@@ -1,0 +1,1 @@
+export { openWeatherFetcherService } from "./openWeatherFetcherService";
