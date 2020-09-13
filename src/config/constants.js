@@ -12,14 +12,8 @@ export const openWeatherMapAPI = {
 };
 
 export const daysOfWeekArr = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-export const daysOfWeekRoutesArr = [
-  "/sun",
-  "/mon",
-  "/tue",
-  "/wed",
-  "/thu",
-  "/fri",
-  "/sat",
-];
+export const daysOfWeekRoutesArr = daysOfWeekArr.map(
+  (day) => `/${day.toLowerCase()}`
+);
 
 export const weatherIconURL = "https://openweathermap.org/img/wn";
