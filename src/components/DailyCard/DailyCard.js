@@ -31,7 +31,7 @@ const DailyCard = ({ day }) => {
       key={data.id}
       // Rest of the Props
       className={classes.link}
-      to={`${data.dayOfWeek}`}
+      to={`${data.dayOfWeek.toLowerCase()}`}
     >
       <Card className={classes.root}>
         <CardHeader
