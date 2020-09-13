@@ -10,8 +10,12 @@ const Style = makeStyles((theme) => ({
       paddingTop: theme.spacing(12),
     },
   },
-  link: {
-    textDecoration: "none",
+  graph: {
+    width: 750,
+    maxWidth: "80%",
+    [theme.breakpoints.down("sm")]: {
+      maxWidth: "100%",
+    },
   },
 }));
 

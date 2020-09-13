@@ -1,6 +1,6 @@
 ## Hosting URL:
 
- - https://reactjs-challenge.web.app
+- https://open-weather.web.app
 
 ![Challenge Accepted!](./challenge.gif)
 

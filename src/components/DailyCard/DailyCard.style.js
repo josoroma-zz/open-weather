@@ -2,8 +2,9 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const Style = makeStyles((theme) => ({
   root: {
-    maxWidth: 135,
-    minWidth: 135,
+    maxWidth: 115,
+    minWidth: 115,
+    maxHeight: 132,
     display: "inline-block",
     margin: theme.spacing(1),
   },
@@ -20,6 +21,7 @@ const Style = makeStyles((theme) => ({
   iconIMG: {
     margin: -20,
     marginTop: -30,
+    marginRight: -5,
   },
 }));
 

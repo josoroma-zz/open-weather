@@ -8,7 +8,7 @@ import PropTypes from "prop-types";
 import Typography from "@material-ui/core/Typography";
 import _get from "lodash.get";
 
-import { getDayOfWeek, getWeatherIcon } from "utils";
+import { convertToDegrees, getDayOfWeek, getWeatherIcon } from "utils";
 
 import useStyles from "./DailyCard.style";
 
@@ -38,7 +38,7 @@ const DailyCard = ({ day }) => {
           title={data.dayOfWeek}
           classes={{ root: classes.header, title: classes.title }}
         />
-        <CardContent>
+        <CardContent className={classes.content}>
           <Grid container justify="center">
             <Grid item className={classes.iconIMG} align="center" xs={12}>
               <img
@@ -49,10 +49,14 @@ const DailyCard = ({ day }) => {
               />
             </Grid>
             <Grid item xs={6}>
-              <Typography variant="body2">{data.tempMin}</Typography>
+              <Typography variant="body2">
+                {convertToDegrees({ number: data.tempMin })}
+              </Typography>
             </Grid>
             <Grid item align="right" xs={6}>
-              <Typography variant="body2">{data.tempMax}</Typography>
+              <Typography variant="body2">
+                {convertToDegrees({ number: data.tempMax })}
+              </Typography>
             </Grid>
           </Grid>
         </CardContent>

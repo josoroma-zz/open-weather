@@ -4,8 +4,6 @@ import { createBrowserHistory } from "history";
 
 // Route Components
 import Routes from "routes/Routes";
-// Custom Global State
-import { SearchValueProvider } from "context/SearchValue";
 // Layout Components
 import { Toolbar } from "components";
 
@@ -18,9 +16,7 @@ const Layout = {
 const App = () => (
   <>
     <CssBaseline />
-    <SearchValueProvider>
-      <Routes Layout={Layout} history={history} />
-    </SearchValueProvider>
+    <Routes Layout={Layout} history={history} />
   </>
 );
 

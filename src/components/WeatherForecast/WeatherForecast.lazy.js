@@ -1,5 +1,6 @@
 import React from "react";
 import Container from "@material-ui/core/Container";
+import Grid from "@material-ui/core/Grid";
 import { Redirect, useHistory } from "react-router-dom";
 import _get from "lodash.get";
 import useSWR from "swr";
@@ -8,7 +9,7 @@ import { v4 as uuid } from "uuid";
 import { openWeatherMapAPI } from "config";
 import { openWeatherFetcherService } from "services";
 
-import { DailyCard, ContentMessage } from "components";
+import { ContentMessage, Graph, DailyCard } from "components";
 
 import useStyles from "./WeatherForecast.lazy.style";
 
@@ -55,16 +56,22 @@ const WeatherForecastLazy = () => {
     <Container
       data-testid="id-weather-forecast-container"
       className={classes.root}
-      maxWidth="md"
     >
-      {response.data.map((day) => (
-        <DailyCard
-          // Key
-          key={uuid()}
-          // Rest of the Props
-          day={day}
-        />
-      ))}
+      <Grid container justify="center">
+        {response.data.map((day) => (
+          <DailyCard
+            // Key
+            key={uuid()}
+            // Rest of the Props
+            day={day}
+          />
+        ))}
+      </Grid>
+      <Grid container justify="center">
+        <Grid className={classes.graph} item>
+          <Graph days={response.data} />
+        </Grid>
+      </Grid>
     </Container>
   );
 };
