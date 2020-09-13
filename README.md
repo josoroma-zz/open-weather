@@ -2,6 +2,8 @@
 
 - https://open-weather.web.app
 
+![Challenge Accepted!](./challenge.gif)
+
 ### Get and set your Open Weather Map key
 
 - https://home.openweathermap.org/api_keys
@@ -13,8 +15,6 @@ DOMAIN=https://open-weather.web.app
 REACT_APP_API_URL=https://api.openweathermap.org/data/2.5/forecast
 REACT_APP_API_KEY=???
 ```
-
-![Challenge Accepted!](./challenge.gif)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
