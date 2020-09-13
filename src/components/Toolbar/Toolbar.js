@@ -18,7 +18,7 @@ const Toolbar = () => {
             <Grid item xs={12}>
               <Link className={classes.link} to={"/"}>
                 <Typography className={classes.title} variant="h6">
-                  5 day weather forecast
+                  Weather Forecast
                 </Typography>
               </Link>
             </Grid>
