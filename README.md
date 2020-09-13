@@ -1,6 +1,6 @@
 ## Hosting URL:
 
-- https://open-weather.web.app
+- https://open-weather-forecast.web.app
 
 ![Challenge Accepted!](./challenge.gif)
 
