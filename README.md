@@ -11,7 +11,7 @@
 **code .env**
 
 ```
-DOMAIN=https://open-weather.web.app
+DOMAIN=https://open-weather-forecast.web.app
 REACT_APP_API_URL=https://api.openweathermap.org/data/2.5/forecast
 REACT_APP_API_KEY=???
 ```
