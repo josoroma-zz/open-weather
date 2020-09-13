@@ -22,4 +22,4 @@ export const daysOfWeekRoutesArr = [
   "/sat",
 ];
 
-export const weatherIconURL = "http://openweathermap.org/img/wn";
+export const weatherIconURL = "https://openweathermap.org/img/wn";
